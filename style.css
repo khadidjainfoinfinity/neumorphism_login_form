@@ -1,0 +1,277 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=NTR&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Tilt+Prism&family=Varela+Round&display=swap');
+
+
+*{
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'NTR', sans-serif; 
+
+}
+body {
+    background-color:  #F0f0f3;
+    display:  flex;
+    justify-content: center;
+    
+    
+}
+
+
+.wrapper  {
+  margin-top:  50%;
+  width:  420px;
+  height: 490px;
+  background-color:#F0f0f3;
+  box-shadow:   -10px -10px 30px #ffffff,10px 10px 35px rgba(174, 174, 192,.3) ,inset -10px -10px 20px rgba(174, 174, 192,.2) , inset 10px 10px 15px #ffffff;
+  border: none;
+  border-radius: 30px ;
+  outline:  none;
+  position:  relative;
+  display: flex; 
+  flex-flow:  column nowrap;
+}
+
+h2{
+  text-transform:  capitalize;
+  text-align:  center;
+  font-size: 3.5em;
+  color: #777;
+  letter-spacing: 3px;
+  margin-top:  6%;
+}
+
+
+.input_box{
+  position:  relative;
+  width:  100%;
+  height: 78px;
+  background: transparent;
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  
+}
+
+
+.input_box input{
+  width:  70%;
+  height:  60%;
+  outline:  none ;
+  background:  #F0f0f3;
+  border: none;
+  box-shadow: inset -7px -7px 8px rgba(255, 255, 255, .65) , inset 7px 7px 10px rgba(174, 174, 192,.25) ;
+  border-radius:  25px;
+  font-size:  15px;
+  padding-left:  25px;
+  letter-spacing:  1px;
+}
+
+.input_box input:hover::placeholder{
+  visibility:  hidden;
+}
+
+
+
+
+.input_box i{
+  position:  absolute;
+  margin-left:  50%;
+  font-size: 20px;
+}
+
+.remember_forget{
+  display: grid;
+  grid-template-columns: 5% 62% 33%;
+  align-items:  center;
+  width:  70%;
+  margin-left: 15%;
+  height:  10%;
+}
+
+
+.remember_forget label{
+  color:  #777;
+  font-size:  15px;
+  letter-spacing:  1px;
+  text-transform:  capitalize;
+  margin-left: 14px;
+}
+
+
+.remember{
+  appearance: none;
+  width:  22px;
+  height:  22px;
+  border: 2px solid #fff; 
+  border-radius:  50%;
+  outline:  none;
+  box-shadow:  -5px -5px 10px rgba(255, 255, 255, .7) , 
+      5px 5px 10px rgba(174, 174, 192,.35) ,
+    inset -5px -5px 10px rgba(255, 255, 255, .5) , 
+    inset  5px 5px 10px rgba(174, 174, 192,.35);
+}
+
+.remember:checked + label:before{
+  font-family:  "FontAwesome";
+  content: " \f4fc";
+  color:  #777;
+  position:  absolute ;
+  left: 16%;
+  top: 62.5%;
+  
+}
+
+.remember:checked{
+  border:  none;
+  box-shadow:  none;
+}
+
+.remember_forget a{
+  text-decoration:  none;
+  color:  #777;
+  font-size:  15px;
+}
+
+
+.button_box {
+  width: 100%;
+  height: 13%;
+  display:  flex;
+  justify-content: center ;
+  align-items:  center;
+  margin-top:  6%;
+}
+
+button{
+  display:  flex;
+  justify-content: center; 
+  align-items:  center;
+  font-size:  30px;
+  letter-spacing: 3px;
+  font-family: 'NTR', sans-serif;
+  color:  #777;
+  font-weight:  bold;
+  height:  85%;
+  width:  40%;
+  border:  none;
+  outline:  none;
+  box-shadow:   -10px -10px 25px #ffffff,10px 10px 30px rgba(174, 174, 192,.4) ,inset -10px -10px 15px rgba(174, 174, 192,.3) , inset 10px 10px 15px #ffffff;
+  border-radius:  3vw;
+}
+
+
+
+
+.btn:hover{
+    border: 4px solid #F0f0f3;
+    box-shadow:  -7px -7px 15px rgba(255, 255, 255, .7) , 
+      7px 7px 20px rgba(174, 174, 192,.3) ,
+    inset -7px -7px 20px rgba(255, 255, 255, .5) , 
+    inset  7px 7px 20px rgba(174, 174, 192,.14);
+  font-size: 32px;
+  letter-spacing: 3.5px;
+  
+}
+
+
+
+@media screen and (max-width: 428px) {
+  
+  .wrapper  {
+  width:  300px;
+  height: 350px;
+  background-color:#F0f0f3;
+  box-shadow:   -7px -7px 10px #ffffff,7px 7px 15px rgba(174, 174, 192,.3) ,inset -7px -7px 10px rgba(174, 174, 192,.2) , inset 7px 7px 10px #ffffff;
+  border-radius:18px ;
+  
+}
+  
+h2{
+  
+  font-size: 2.2em;
+  letter-spacing: 2px;
+  margin-top:  4%;
+}
+
+
+.input_box{
+  
+  height: 65px;
+
+}
+
+
+.input_box input{
+  width:  72%;
+  height:  50%;
+  font-size:  13px;
+  padding-left:  15px;
+  
+}
+
+.input_box i{
+
+  margin-left:  58%;
+  font-size: 15px;
+}
+
+.remember_forget{
+  
+  grid-template-columns: 5% 55% 40%;
+  width:  72%;
+  margin-left: 14%;
+}
+
+
+.remember_forget label{
+  
+  font-size:  12px;
+  letter-spacing:  .61px;
+  
+  
+}
+
+
+.remember{
+  width:  18px;
+  height:  18px;
+  border: 1.5px solid #fff; 
+  
+}
+
+
+
+
+.remember_forget a{
+  font-size:  12px;
+}
+
+
+
+
+button{
+
+  font-size:  24px;
+  letter-spacing: 2px;
+  box-shadow:   -7px -7px 15px #ffffff,7px 7px 20px rgba(174, 174, 192,.4) ,inset -7px -7px 10px rgba(174, 174, 192,.3) , inset 7px 7px 10px #ffffff;
+  border-radius:  20px;
+}
+
+
+
+
+.btn:hover{
+    border: 2px solid #F0f0f3;
+    box-shadow:  -7px -7px 15px rgba(255, 255, 255, .7) , 
+      7px 7px 20px rgba(174, 174, 192,.3) ,
+    inset -7px -7px 20px rgba(255, 255, 255, .5) , 
+    inset  7px 7px 20px rgba(174, 174, 192,.14);
+  font-size: 25px;
+  letter-spacing: 2px;
+  
+}
+  
+  
+  
+}
